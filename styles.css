@@ -332,7 +332,7 @@ body.menu-open {
     background-color: #121314;
     color: white;
     padding: clamp(72px, 8vw, 120px) clamp(24px, 5vw, 120px);
-    height: 800px;
+    min-height: 900px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;

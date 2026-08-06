@@ -206,6 +206,16 @@ function renderProject() {
 
 renderProject();
 
+document.querySelector(".right").onclick = () => {
+    current = (current + 1) % projects.length;
+    renderProject();
+};
+
+document.querySelector(".left").onclick = () => {
+    current = (current - 1 + projects.length) % projects.length;
+    renderProject();
+};
+
 let touchStartX = 0;
 let touchEndX = 0;
 

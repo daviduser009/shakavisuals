@@ -294,6 +294,11 @@
         right: 12px;
     }
 
+    .list-menu{
+        width: 100%;
+        border-radius: 0;
+    }
+
     .hero {
         padding: 22px 14px;
         gap: 18px;
@@ -341,7 +346,6 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 10px;
-        margin-left: 0;
     }
 
     .services-list li {

@@ -3,37 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="assets/logo.png">
+    <link rel="icon" type="image/png" href="clients-images/logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/mobile.css">
     <title>Shaka Visuals</title>
 </head>
 
 <body>
 
+    <div class="menu">
+        <i data-lucide="menu" class="menu-icon"></i>
+    </div>
+
+    <div class="list-menu">
+        <div class="menu-header">
+            <i data-lucide="x" class="close-menu"></i>
+        </div>
+        <div>
+            <ul class="menu-itens">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#clientes">Clientes</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contatos">Contatos</a></li>
+            </ul>
+        </div>
+    </div>
+
     <!-- =========================
          HEADER / NAVIGATION
          ========================= -->
 
-    <nav class="navbar">
+    <nav class="navbar" id="home">
         <div class="logo" id="home-link">
             <img src="assets/logo.png" alt="Logo">
         </div>
-
-        <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-
-        <ul class="nav-links">
-            <li><a href="#" id="services-link">O QUE FAZEMOS</a></li>
-            <li><a href="#" id="clients-link">CLIENTES</a></li>
-            <li><a href="#" id="portfolio-link">PORTFOLIO</a></li>
-            <li><a href="#" id="contacts-link">CONTATOS</a></li>
-        </ul>
     </nav>
 
     <!-- =========================
@@ -41,42 +48,34 @@
          ========================= -->
 
     <section class="hero">
+        <div>
+            <h1 class="hero-title">Branding</h1>
+        </div>
         <div class="hero-content">
-            <div>
-                <h1 class="hero-title">BRANDING</h1>
-            </div>
-            <div>
+            <div class="hero-content-text">
                 <p class="hero-text">
-                    Não é sobre criar um <strong>logo</strong>. É sobre construir uma marca que seja <strong>percebida,
-                        lembrada e escolhida.</strong>
-                </p>
-                <div class="hero-button">
-                    <button class="btn-contact">
-                        <p>FAÇA PARTE JÁ</p>
-                    </button>
-                </div>
-            </div>
-        </div>
-        <div class="hero-image">
-            <img src="assets/banner.png" alt="">
-        </div>
-
-
-        <div class="hero-mobile">
-            <div>
-                <h1>BRANDING</h1>
-            </div>
-            <div>
-                <p>
-                    Não é sobre criar um <strong>logo</strong>. É sobre construir uma marca que seja <strong>percebida,
-                        lembrada e escolhida.</strong>
+                    NÃO É SOBRE CRIAR <span class="text-bold">LOGO</span>.<br><br> É SOBRE CONSTRUIR UMA MARCA QUE SEJA
+                    <span class="text-bold">RECONHECIDA, LEMBRADA E ESCOLHIDA.</span>
                 </p>
             </div>
-            <div class="hero-btn-mobile">
-                 <button class="btn-contact">
-                <p>VAMOS CONVERSAR</p>
-            </button>
+            <div class="hero-image">
+                <img src="assets/banner.png" alt="">
             </div>
+        </div>
+
+    </section>
+
+
+
+    <section class="hero-mobile">
+        <div class="hero-content-text-mobile">
+            <div class="logo-mobile">
+                <img src="./assets/logo-mobile.png" alt="">
+            </div>
+            <p class="hero-text">
+                NÃO É SOBRE CRIAR <span class="text-bold">LOGO</span>.<br><br> É SOBRE CONSTRUIR UMA MARCA QUE SEJA
+                <span class="text-bold">RECONHECIDA, LEMBRADA E ESCOLHIDA.</span>
+            </p>
         </div>
     </section>
 
@@ -84,55 +83,29 @@
          SERVICES SECTION
          ========================= -->
 
-    <section class="services">
+    <section class="services" id="servicos">
         <div>
-            <h1 class="services-title">O QUE FAZEMOS</h1>
+            <h1 class="services-title">O que fazemos</h1>
         </div>
         <div>
-            <p class="services-text">Construímos marcas que unem <strong>estratégia, identidade e presença.</strong></p>
+            <p class="services-text">CONSTRUÍMOS MARCAS DO <span class="text-bold">POSICIONAMENTO À EXPERIÊNCIA.</span>
+            </p>
         </div>
         <div>
             <div class="services-list">
-                <div class="card-service">
-                    <h2>BRANDING </h2>
-                    <div class="card-icon"><i data-lucide="gem"></i></div>
-                    <p>Construímos marcas com propósito e personalidade, criando conexões autênticas que fortalecem o
-                        posicionamento e a percepção do seu negócio.</p>
-                </div>
-                <div class="card-service">
-                    <h2>MANUAL DE MARCA</h2>
-                    <div class="card-icon"><i data-lucide="book-open-text"></i></div>
-                    <p>Documentamos os elementos e diretrizes da sua identidade para assegurar uma comunicação visual
-                        consistente, clara e reconhecível.</p>
-                </div>
-                <div class="card-service">
-                    <h2>ESTRATÉGIA DE MARCA</h2>
-                    <div class="card-icon"><i data-lucide="target"></i></div>
-                    <p>Definimos o posicionamento único da sua marca, criando um roteiro claro para reconhecimento e
-                        crescimento no mercado.</p>
-                </div>
-                <div class="card-service">
-                    <h2>IDENTIDADE VISUAL</h2>
-                    <div class="card-icon"><i data-lucide="palette"></i></div>
-                    <p>Desenvolvemos sistemas visuais coesos e impactantes, do logotipo à tipografia, que comunicam a
-                        essência da sua empresa.</p>
-                </div>
-                <div class="card-service">
-                    <h2>COLEÇÕES EXCLUSIVAS</h2>
-                    <div class="card-icon"><i data-lucide="sparkles"></i></div>
-                    <p>Criamos experiências táteis e visuais que elevam seu produto, garantindo memorabilidade e valor
-                        percebido.</p>
-                </div>
-                <div class="card-service">
-                    <h2>EMBALAGENS</h2>
-                    <div class="card-icon"><i data-lucide="package"></i></div>
-                    <p>Desenvolvemos embalagens que refletem a identidade da sua marca e oferecem uma experiência
-                        memorável ao cliente.</p>
-                </div>
+                <ul>
+                    <li>Branding</li>
+                    <li>Manual de Marca</li>
+                    <li>Estratégia de Marca</li>
+                    <li>Identidade Visual</li>
+                    <li>Coleções Exclusivas</li>
+                    <li>Embalagens</li>
+                </ul>
             </div>
         </div>
         <div>
-            <p class="services-text">Do conceito à aplicação, <br> desenvolvemos <strong>marcas prontas <br> para crescer.</strong></p>
+            <p class="services-text">Do conceito à aplicação, <br> desenvolvemos <span class="text-bold">marcas
+                    preparadas <br> para crescer.</span></p>
         </div>
     </section>
 
@@ -141,7 +114,7 @@
          CLIENTS SECTION
          ========================= -->
 
-    <section class="clients">
+    <section class="clients" id="clientes">
         <div>
             <h1 class="clients-title">EMPRESAS QUE <br> CONFIAM NA <br> SHAKA VISUALS</h1>
         </div>
@@ -150,156 +123,82 @@
 
                 <div class="clients-list">
                     <div class="card-client">
-                        <img src="assets/giftland.png" alt="">
+                        <img src="clients-images/giftland.png" alt="">
                     </div>
                     <div class="card-client">
-                        <img src="assets/catagua.png" alt="">
+                        <img src="clients-images/catagua.png" alt="">
                     </div>
                     <div class="card-client">
-                        <img src="assets/garuda.png" alt="">
+                        <img src="clients-images/garuda.png" alt="">
                     </div>
                     <div class="card-client">
-                        <img src="assets/taisushi.png" alt="">
+                        <img src="clients-images/taisushi.png" alt="">
                     </div>
                     <div class="card-client">
-                        <img src="assets/urbia.png" alt="">
+                        <img src="clients-images/urbia.png" alt="">
                     </div>
                     <div class="card-client">
-                        <img src="assets/rodafg.png" alt="">
+                        <img src="clients-images/rodafg.png" alt="">
                     </div>
                     <div class="card-client">
-                        <img src="assets/fuoco.png" alt="">
+                        <img src="clients-images/fuoco.png" alt="">
                     </div>
                     <div class="card-client">
-                        <img src="assets/bodybalance.png" alt="">
+                        <img src="clients-images/bodybalance.png" alt="">
                     </div>
                     <div class="card-client">
-                        <img src="assets/bravagym.png" alt="">
+                        <img src="clients-images/bravagym.png" alt="">
                     </div>
                     <div class="card-client">
-                        <img src="assets/ibiraquera.png" alt="">
+                        <img src="clients-images/ibiraquera.png" alt="">
                     </div>
                     <div class="card-client">
-                        <img src="assets/unipraias.png" alt="">
+                        <img src="clients-images/unipraias.png" alt="">
                     </div>
                     <div class="card-client">
-                        <img src="assets/anomaçonico.png" alt="">
+                        <img src="clients-images/anomaçonico.png" alt="">
                     </div>
                     <div class="card-client">
-                        <img src="assets/ginkgo.png" alt="">
+                        <img src="clients-images/ginkgo.png" alt="">
                     </div>
                     <div class="card-client">
-                        <img src="assets/vinciegriffo.png" alt="">
+                        <img src="clients-images/vinciegriffo.png" alt="">
                     </div>
                     <div class="card-client">
-                        <img src="assets/surfland.png" alt="">
+                        <img src="clients-images/surfland.png" alt="">
                     </div>
                     <div class="card-client">
-                        <img src="assets/perna.png" alt="">
+                        <img src="clients-images/perna.png" alt="">
                     </div>
                     <div class="card-client">
-                        <img src="assets/globalsoccer.png" alt="">
+                        <img src="clients-images/globalsoccer.png" alt="">
                     </div>
                     <div class="card-client">
-                        <img src="assets/surfsection.png" alt="">
+                        <img src="clients-images/surfsection.png" alt="">
                     </div>
                     <div class="card-client">
-                        <img src="assets/zaka.png" alt="">
+                        <img src="clients-images/zaka.png" alt="">
                     </div>
                     <div class="card-client">
-                        <img src="assets/shaka.png" alt="">
+                        <img src="clients-images/shaka.png" alt="">
                     </div>
                     <div class="card-client">
-                        <img src="assets/brt.png" alt="">
+                        <img src="clients-images/brt.png" alt="">
                     </div>
                     <div class="card-client">
-                        <img src="assets/sproutfi.png" alt="">
+                        <img src="clients-images/sproutfi.png" alt="">
                     </div>
                     <div class="card-client">
-                        <img src="assets/ekologica.png" alt="">
+                        <img src="clients-images/ekologica.png" alt="">
                     </div>
                     <div class="card-client">
-                        <img src="assets/allespark.png" alt="">
+                        <img src="clients-images/allespark.png" alt="">
                     </div>
 
                 </div>
 
 
-                <div class="clients-list">
-                    <div class="card-client">
-                        <img src="assets/giftland.png" alt="">
-                    </div>
-                    <div class="card-client">
-                        <img src="assets/catagua.png" alt="">
-                    </div>
-                    <div class="card-client">
-                        <img src="assets/garuda.png" alt="">
-                    </div>
-                    <div class="card-client">
-                        <img src="assets/taisushi.png" alt="">
-                    </div>
-                    <div class="card-client">
-                        <img src="assets/urbia.png" alt="">
-                    </div>
-                    <div class="card-client">
-                        <img src="assets/rodafg.png" alt="">
-                    </div>
-                    <div class="card-client">
-                        <img src="assets/fuoco.png" alt="">
-                    </div>
-                    <div class="card-client">
-                        <img src="assets/bodybalance.png" alt="">
-                    </div>
-                    <div class="card-client">
-                        <img src="assets/bravagym.png" alt="">
-                    </div>
-                    <div class="card-client">
-                        <img src="assets/ibiraquera.png" alt="">
-                    </div>
-                    <div class="card-client">
-                        <img src="assets/unipraias.png" alt="">
-                    </div>
-                    <div class="card-client">
-                        <img src="assets/anomaçonico.png" alt="">
-                    </div>
-                    <div class="card-client">
-                        <img src="assets/ginkgo.png" alt="">
-                    </div>
-                    <div class="card-client">
-                        <img src="assets/vinciegriffo.png" alt="">
-                    </div>
-                    <div class="card-client">
-                        <img src="assets/surfland.png" alt="">
-                    </div>
-                    <div class="card-client">
-                        <img src="assets/perna.png" alt="">
-                    </div>
-                    <div class="card-client">
-                        <img src="assets/globalsoccer.png" alt="">
-                    </div>
-                    <div class="card-client">
-                        <img src="assets/surfsection.png" alt="">
-                    </div>
-                    <div class="card-client">
-                        <img src="assets/zaka.png" alt="">
-                    </div>
-                    <div class="card-client">
-                        <img src="assets/shaka.png" alt="">
-                    </div>
-                    <div class="card-client">
-                        <img src="assets/brt.png" alt="">
-                    </div>
-                    <div class="card-client">
-                        <img src="assets/sproutfi.png" alt="">
-                    </div>
-                    <div class="card-client">
-                        <img src="assets/ekologica.png" alt="">
-                    </div>
-                    <div class="card-client">
-                        <img src="assets/allespark.png" alt="">
-                    </div>
 
-                </div>
 
             </div>
         </div>
@@ -310,41 +209,403 @@
     <!-- =========================
          PORTFOLIO SECTION
          ========================= -->
-    <section class="portfolio">
-        <h1 class="portfolio-title-mobile">TRABALHOS RECENTES</h1>
-        <div class="portfolio-info">
-            <h1 class="portfolio-title">TRABALHOS RECENTES</h1>
+    <section class="portfolio back-dark" id="projetos">
 
-            <div class="portfolio-content">
-                <h2 id="project-title"></h2>
-                <p id="project-description"></p>
-            </div>
-        </div>
-
-        <div class="portfolio-view">
-            <button class="arrow left" aria-label="Projeto anterior">
-                <i data-lucide="arrow-left"></i>
-            </button>
-
-            <div class="portfolio-card" id="portfolio-card">
-                <img id="project-image" src="" alt="">
+        <div class="portfolio-content">
+            <div class="portfolio-title">
+                <h1>Case de <br> Branding</h1>
             </div>
 
-            <button class="arrow right" aria-label="Próximo projeto">
-                <i data-lucide="arrow-right"></i>
-            </button>
+
+            <div class="global-soccer">
+                <div>
+                    <div class="global-title">
+                        <h1>PROJETO:</h1>
+                        <h2 class="global-title">Global Soccer <br> Agency</h2>
+                    </div>
+                    <div class="global-subtitle">
+                        <h1 class="entregas">ENTREGAS:</h1>
+                        <p class="global-categories">
+                            Branding,<br> Estratégia,<br> Identidade Visual,<br> Manual de Marca.
+                        </p>
+                    </div>
+                </div>
+                <div class="mobile-view global-title-mobile">
+                    <h1>Global Soccer Agency</h1>
+                </div>
+                <div class="global-image">
+                    <img src="portfolio-images/globalsoccer.png" alt="">
+                </div>
+            </div>
+
+            <div class="global-soccer-banner">
+                <img src="portfolio-images/globalsoccerbanner.png" alt="">
+            </div>
+
         </div>
 
     </section>
+
+
+
+    <section class="portfolio">
+
+        <div class="portfolio-content">
+
+            <div class="portfolio-title">
+                <h1>Case de <br> Lojas & Coleções <br> Exclusivas</h1>
+            </div>
+
+            <div class="global-soccer">
+                <div>
+                    <div class="global-title">
+                        <h1>PROJETO:</h1>
+                        <h2 class="global-title">Cataguá - Loja Oficial</h2>
+                    </div>
+                    <div>
+                        <h1 class="entregas">ENTREGAS:</h1>
+                        <p class="global-categories">
+                            Branding,<br> Merchandising,<br> Coleção Exclusiva,<br> Experiência de loja, <br>
+                            Ilustrações.
+                        </p>
+                    </div>
+                </div>
+                <div class="global-image">
+                    <img src="portfolio-images/catagua.png" alt="">
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+    <section class="portfolio back-dark">
+
+        <div class="portfolio-content">
+            <div class="portfolio-title">
+                <h1>Case de <br> Embalagens</h1>
+            </div>
+
+
+            <div class="global-soccer">
+                <div>
+                    <div class="global-title">
+                        <h1>PROJETO:</h1>
+                        <h2 class="global-title">Ginkgo Cafés</h2>
+                    </div>
+                    <div>
+                        <h1 class="entregas">ENTREGAS:</h1>
+                        <p class="global-categories">
+                            Branding,<br> Embalagem, <br> Ilustrações.
+                        </p>
+                    </div>
+                </div>
+                <div class="global-image">
+                    <img src="portfolio-images/ginkgo.png" alt="">
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+    <section class="portfolio">
+
+        <div class="portfolio-content">
+
+            <div class="portfolio-title">
+                <h1>Outros <br> Cases</h1>
+            </div>
+
+            <div class="global-soccer other-case">
+                <div class="other-cases">
+                    <div class="global-title">
+                        <h1 class="other-projects-apresentation">PROJETOS <br> QUE REFLETEM <br> NOSSA <br>
+                            VERSATILIDADE <br> EM <span class="text-bold">BRANDING, <br></span> IDENTIDADE VISUAL <br> E
+                            ESTRATÉGIA <br> DE MARCA.</h1>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+    <section class="portfolio back-dark">
+
+        <div class="light-projects">
+
+
+            <div class="others-project left-side">
+                <div class="project-text left">
+                    <div>
+                        <h1>PROJETO:</h1>
+                        <h2>Tai Sushi</h2>
+                    </div>
+                    <div>
+
+                        <h1>ENTREGAS:</h1>
+                        <p>Branding, <br> Identidade Visual, <br> Manual de Marca, <br> Embalagem.</p>
+                    </div>
+                </div>
+                <div class="project-image">
+                    <img src="portfolio-images/taisushi.png" alt="">
+                </div>
+            </div>
+
+
+            <div class="others-project right-side">
+                <div class="project-image">
+                    <img src="portfolio-images/bodybalance.png" alt="">
+                </div>
+                <div class="project-text">
+                    <div>
+                        <h1>PROJETO:</h1>
+                        <h2>Studio <br> Body Balance</h2>
+                    </div>
+                    <div>
+                        <h1>ENTREGAS:</h1>
+                        <p>Branding, <br> Identidade Visual, <br> Manual de Marca.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+
+
+
+    <section class="portfolio">
+
+        <div class="light-projects">
+
+
+            <div class="others-project left-side">
+                <div class="project-text left">
+                    <div>
+                        <h1>PROJETO:</h1>
+                        <h2>Roda FG - <br> Loja Oficial</h2>
+                    </div>
+                    <div>
+                        <h1>ENTREGAS:</h1>
+                        <p>Branding, <br> Coleção Exclusiva, <br> Expêriencia de Loja, <br> Ilustrações, <br>
+                            Merchandising.</p>
+                    </div>
+                </div>
+                <div class="project-image">
+                    <img src="portfolio-images/rodafg.png" alt="">
+                </div>
+            </div>
+
+
+            <div class="others-project right-side">
+                <div class="project-image">
+                    <img src="portfolio-images/surfland.png" alt="">
+                </div>
+                <div class="project-text">
+                    <div>
+                        <h1>PROJETO:</h1>
+                        <h2>Surfland - <br> Loja Oficial</h2>
+                    </div>
+                    <div>
+                        <h1>ENTREGAS:</h1>
+                        <p>Branding, <br> Coleção Exclusiva, <br> Ilustrações, <br> Mechandising.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+
+
+
+    <section class="portfolio back-dark">
+
+        <div class="light-projects">
+
+
+            <div class="others-project left-side">
+                <div class="project-text left">
+                    <div>
+                        <h1>PROJETO:</h1>
+                        <h2>Fuoco <br> Pizzaria</h2>
+                    </div>
+                    <div>
+                        <h1>ENTREGAS:</h1>
+                        <p>Branding, <br> Identidade Visual, <br> Manual de Marca, <br> Embalagem.</p>
+                    </div>
+                </div>
+                <div class="project-image">
+                    <img src="portfolio-images/fuoco.png" alt="">
+                </div>
+            </div>
+
+
+            <div class="others-project right-side">
+                <div class="project-image">
+                    <img src="portfolio-images/vinci.png" alt="">
+                </div>
+                <div class="project-text">
+                    <div>
+                        <h1>PROJETO:</h1>
+                        <h2>Vinci & Griffo <br> Advocaia</h2>
+                    </div>
+                    <div>
+                        <h1>ENTREGAS:</h1>
+                        <p>Branding, <br> Identidade Visual, <br> Manual de Marca.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+
+
+    <section class="portfolio">
+
+        <div class="light-projects">
+
+
+            <div class="others-project left-side">
+                <div class="project-text left">
+                    <div>
+                        <h1>PROJETO:</h1>
+                        <h2>Brt <br> Contabilidade</h2>
+                    </div>
+                    <div>
+                        <h1>ENTREGAS:</h1>
+                        <p>Branding, <br> Identidade Visual, <br> Manual de Marca.</p>
+                    </div>
+                </div>
+                <div class="project-image">
+                    <img src="portfolio-images/brt.png" alt="">
+                </div>
+            </div>
+
+
+            <div class="others-project right-side">
+                <div class="project-image">
+                    <img src="portfolio-images/ekologica.png" alt="">
+                </div>
+                <div class="project-text">
+                    <div>
+                        <h1>PROJETO:</h1>
+                        <h2>Ekologica</h2>
+                    </div>
+                    <div>
+                        <h1>ENTREGAS:</h1>
+                        <p>Branding, <br> Identidade Visual, <br> Manual de Marca.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+
+
+    <section class="portfolio back-dark">
+
+        <div class="light-projects">
+
+
+            <div class="others-project left-side">
+                <div class="project-text left">
+                    <div>
+                        <h1>PROJETO:</h1>
+                        <h2>parque <br> Unipraias - <br> Loja Oficial</h2>
+                    </div>
+                    <div>
+                        <h1>ENTREGAS:</h1>
+                        <p>Branding, <br> Coleção Exclusiva, <br> Experi~encia de loja, <br> Ilustrações.</p>
+                    </div>
+                </div>
+                <div class="project-image">
+                    <img src="portfolio-images/unipraias.png" alt="">
+                </div>
+            </div>
+
+
+            <div class="others-project right-side">
+                <div class="project-image">
+                    <img src="portfolio-images/surfsection.png" alt="">
+                </div>
+                <div class="project-text">
+                    <div>
+                        <h1>PROJETO:</h1>
+                        <h2>Surfsection</h2>
+                    </div>
+                    <div>
+                        <h1>ENTREGAS:</h1>
+                        <p>Branding, <br> Identidade Visual, <br> Manual de Marca.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+
+    <section class="instagram" id="contatos">
+        <div class="instagram-apresentation">
+            <h1>Acompanhe o <br> Shaka Visuals <br> nas redes sociais</h1>
+        </div>
+        <div class="instagram-container">
+            <blockquote class="instagram-media"
+                data-instgrm-permalink="https://www.instagram.com/p/Da0TQVIjmbW/?img_index=1" data-instgrm-version="14">
+            </blockquote>
+        </div>
+
+        <script async src="https://www.instagram.com/embed.js"></script>
+    </section>
+
+
+
 
     <!-- =========================
          CONTACT SECTION
          ========================= -->
     <section class="contacts">
-        <h1>PRONTO PARA CRIAR ALGO MARCANTE?</h1>
-        <div>
+        <h1>O PRÓXIMO CASE <br> PODE SER O SEU.</h1>
+        <div class="contacts-btns">
             <button class="btn-contact">
-                <p>VAMOS CONVERSAR</p>
+                <p>Solicite seu orçamento por WhatsApp</p>
+            </button>
+
+            <button class="btn-contact light-theme">
+                <p>Entre em contato por E-mail</p>
             </button>
         </div>
     </section>

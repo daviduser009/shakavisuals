@@ -1,0 +1,193 @@
+@media(max-width: 1500px) {
+    .hero-title {
+        font-size: 200px;
+    }
+
+    .hero-text {
+        font-size: 50px;
+    }
+
+    .services-title {
+        font-size: 100px;
+    }
+
+    .services-text {
+        font-size: 30px;
+    }
+
+    .services-list {
+        font-size: 30px;
+    }
+
+    .portfolio-title h1 {
+        font-size: 100px;
+    }
+
+    .contacts {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contacts h1 {
+        text-align: center;
+        font-size: 100px;
+    }
+
+    .contacts-btns {
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+
+@media (max-width: 1200px) {
+    .hero {
+        display: none;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .logo-mobile{
+        width: 250px;
+        margin: auto;
+        margin-bottom: 100px;
+    }
+
+    .logo-mobile img{
+        width: 100%;
+    }
+
+    .hero-mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100%;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/banner.png');
+        background-size: cover;
+        background-position: center;
+    }
+
+    .hero-content-text-mobile p{
+        color: white;
+        text-align: center;
+    }
+
+    .services{
+        background-color: #f8f7ee;
+        color: black;
+        padding: 50px;
+    }
+
+    .services-title{
+        font-size: 80px;
+    }
+
+    .clients{
+        padding: 50px;
+    }
+
+    .clients h1{
+        font-size: 80px;
+    }
+
+    .card-client{
+        width: 180px;
+        height: 180px;
+    }
+
+    .portfolio{
+        padding: 0;
+    }
+
+    .portfolio-title{
+        text-align: center;
+    }
+
+    .portfolio-title h1{
+        font-size: 80px;
+    }
+
+    .portfolio-content{
+        padding: 50px;
+    }
+
+    .global-soccer{
+        padding: 50px;
+        gap: 10px;
+    }
+
+    .global-title h1{
+        font-size: 20px;
+    }
+
+    .entregas{
+        font-size: 20px;
+    }
+
+    .other-case{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .orther-cases{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .other-projects-apresentation{
+        font-size: 50px !important;
+        text-align: center;
+    }
+
+    .light-projects{
+        padding: 0 50px;
+    }
+
+    .left-side{
+        margin-left: 50px;
+    }
+
+    .right-side{
+        margin-right: 50px;
+    }
+
+    .instagram-apresentation h1{
+        font-size: 70px;
+    }
+
+    .contacts h1{
+        font-size: 70px;
+        margin-bottom: 100px;
+    }
+}
+
+@media(max-width:900px){
+
+    .global-soccer{
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .global-title{
+        display: none;
+    }
+    
+    .global
+
+    .global-subtitle{
+        display: none;
+    }
+
+    .mobile-view{
+        display: flex;
+    }
+}

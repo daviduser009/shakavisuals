@@ -50,13 +50,13 @@
         display: none;
     }
 
-    .logo-mobile{
+    .logo-mobile {
         width: 250px;
         margin: auto;
         margin-bottom: 100px;
     }
 
-    .logo-mobile img{
+    .logo-mobile img {
         width: 100%;
     }
 
@@ -71,123 +71,395 @@
         background-position: center;
     }
 
-    .hero-content-text-mobile p{
+    .hero-content-text-mobile p {
         color: white;
         text-align: center;
     }
 
-    .services{
+    .services {
         background-color: #f8f7ee;
         color: black;
         padding: 50px;
     }
 
-    .services-title{
+    .services-title {
         font-size: 80px;
     }
 
-    .clients{
+    .clients {
         padding: 50px;
     }
 
-    .clients h1{
+    .clients h1 {
         font-size: 80px;
     }
 
-    .card-client{
+    .card-client {
         width: 180px;
         height: 180px;
     }
 
-    .portfolio{
+    .portfolio {
         padding: 0;
     }
 
-    .portfolio-title{
+    .portfolio-title {
         text-align: center;
     }
 
-    .portfolio-title h1{
+    .portfolio-title h1 {
         font-size: 80px;
     }
 
-    .portfolio-content{
+    .portfolio-content {
         padding: 50px;
     }
 
-    .global-soccer{
+    .global-soccer {
         padding: 50px;
         gap: 10px;
     }
 
-    .global-title h1{
+    .global-title h1 {
         font-size: 20px;
     }
 
-    .entregas{
+    .entregas {
         font-size: 20px;
     }
 
-    .other-case{
+    .other-case {
         display: flex;
         align-items: center;
         justify-content: center;
     }
 
-    .orther-cases{
+    .orther-cases {
         width: 100%;
         justify-content: center;
         align-items: center;
         text-align: center;
     }
 
-    .other-projects-apresentation{
+    .other-projects-apresentation {
         font-size: 50px !important;
         text-align: center;
     }
 
-    .light-projects{
+    .light-projects {
         padding: 0 50px;
     }
 
-    .left-side{
+    .left-side {
         margin-left: 50px;
     }
 
-    .right-side{
+    .right-side {
         margin-right: 50px;
     }
 
-    .instagram-apresentation h1{
+    .instagram-apresentation h1 {
         font-size: 70px;
     }
 
-    .contacts h1{
+    .contacts h1 {
         font-size: 70px;
         margin-bottom: 100px;
     }
 }
 
-@media(max-width:900px){
+@media(max-width:900px) {
 
-    .global-soccer{
+    .global-soccer {
         flex-direction: column;
         text-align: center;
         justify-content: center;
         align-items: center;
     }
 
-    .global-title{
-        display: none;
-    }
-    
-    .global
-
-    .global-subtitle{
+    .global-title {
         display: none;
     }
 
-    .mobile-view{
+    .global-image {
+        width: 90%;
+    }
+
+    .global-subtitle {
+        display: none;
+    }
+
+
+    .mobile-view {
         display: flex;
+    }
+
+    .project-text {
+        display: none;
+    }
+
+    .portfolio-title {
+        padding: 0;
+    }
+
+    .portfolio-title h1 {
+        font-size: 70px;
+    }
+
+    .others-project {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .other-text {
+        display: flex;
+
+    }
+
+    .other-text h1 {
+        font-size: 40px !important;
+    }
+
+    .other-case-text {
+        font-family: Helvetica, sans-serif;
+    }
+
+    .services-case h1 {
+        font-weight: 200;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .right-side {
+        margin-right: 0;
+    }
+
+    .left-side {
+        margin-left: 0;
+    }
+
+    .project-image {
+        width: 70%;
+        height: 400px;
+    }
+
+    .instagram {
+        flex-direction: column;
+    }
+
+    .instagram-apresentation {
+        font-size: 70px;
+        text-align: center;
+    }
+
+    .contacts {
+        padding: 20px;
+    }
+
+    .btn-contact {
+        width: 80%;
+    }
+}
+
+@media(max-width:600px) {
+
+    /* Prevent horizontal overflow */
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    /* Images scale nicely */
+    img,
+    .hero-image img,
+    .global-image img,
+    .project-image img,
+    .card-client img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    /* Header / hero */
+    .navbar {
+        padding: 12px 14px;
+    }
+
+    .logo img {
+        width: 140px;
+    }
+
+    .menu {
+        top: 12px;
+        right: 12px;
+    }
+
+    .hero {
+        padding: 22px 14px;
+        gap: 18px;
+        align-items: flex-start;
+    }
+
+    .hero-title {
+        font-size: clamp(40px, 18vw, 84px);
+        margin: 6px 0 8px;
+        line-height: 0.95;
+    }
+
+    .hero-content {
+        flex-direction: column;
+        padding: 0;
+        gap: 14px;
+    }
+
+    .hero-text {
+        font-size: clamp(14px, 4.5vw, 20px);
+        line-height: 1.4;
+        max-width: 100%;
+    }
+
+    .hero-image {
+        width: 100%;
+    }
+
+    /* Services */
+    .services {
+        padding: 28px 14px;
+        gap: 16px;
+    }
+
+    .services-title {
+        font-size: clamp(24px, 7.5vw, 48px);
+    }
+
+    .services-text {
+        font-size: clamp(14px, 3.5vw, 20px);
+        max-width: 100%;
+    }
+
+    .services-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        margin-left: 0;
+    }
+
+    .services-list li {
+        font-size: clamp(12px, 3.5vw, 18px);
+    }
+
+    /* Clients */
+    .clients {
+        padding: 32px 14px;
+    }
+
+    .clients h1 {
+        font-size: clamp(20px, 7.5vw, 40px);
+    }
+
+    .clients-list {
+        gap: 10px;
+    }
+
+    .card-client {
+        width: 96px;
+        height: 96px;
+    }
+
+    /* Portfolio */
+    .portfolio-content {
+        padding: 28px 14px;
+    }
+
+    .portfolio-title h1 {
+        font-size: clamp(24px, 9vw, 40px);
+        margin-bottom: 20px;
+    }
+
+    .global-soccer {
+        flex-direction: column;
+        gap: 12px;
+        padding: 0;
+    }
+
+    .global-title h2 {
+        font-size: clamp(18px, 6.5vw, 34px);
+    }
+
+    .global-categories {
+        font-size: clamp(14px, 4vw, 22px);
+    }
+
+    .global-image {
+        width: 100%;
+        min-height: 160px;
+    }
+
+    .light-projects {
+        padding: 0 14px;
+    }
+
+    .others-project {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .project-text h2 {
+        font-size: clamp(18px, 6vw, 32px);
+    }
+
+    .project-image {
+        width: 100%;
+        min-height: 140px;
+    }
+
+    .project-image img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* Instagram / contacts */
+    .instagram {
+        padding: 24px 14px;
+        gap: 18px;
+        flex-direction: column;
+    }
+
+    .instagram-apresentation h1 {
+        font-size: clamp(20px, 8vw, 36px);
+    }
+
+    .contacts {
+        padding: 24px 14px 48px;
+    }
+
+    .contacts h1 {
+        font-size: clamp(22px, 8vw, 42px);
+    }
+
+    .contacts-btns {
+        gap: 12px;
+    }
+
+    .btn-contact {
+        width: 100%;
+        max-width: 100%;
+        padding: 12px 16px;
+        font-size: 16px;
+    }
+
+    /* Footer */
+    footer {
+        padding: 18px 14px 28px;
+    }
+
+    /* Minor adjustments to avoid overflowing margins */
+    .portfolio-title,
+    .services,
+    .clients,
+    .contacts,
+    .portfolio-content {
+        box-sizing: border-box;
     }
 }

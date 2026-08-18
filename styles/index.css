@@ -593,6 +593,17 @@ html {
     cursor: pointer;
 }
 
+.logo-footer{
+    display: flex;
+    justify-content: center;
+    padding: 100px 0 0 0;
+}
+
+.logo-footer img{
+    width: 180px;
+    height: auto;
+}
+
 .light-theme{
     background-color: var(--branco);
     color: var(--grafite);

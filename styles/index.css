@@ -231,6 +231,9 @@ html {
 .services-list {
     display: flex;
     font-size: 40px;
+    font-weight: 100;
+    font-style: italic;
+    color: var(--cinza-claro);
     font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
 }
 
@@ -556,7 +559,7 @@ html {
    ========================= */
 
 .contacts {
-    padding: 50px 150px 200px 150px;
+    padding: 150px 150px 200px 150px;
 }
 
 

@@ -198,12 +198,30 @@
         display: none;
     }
 
+    .portfolio-header {
+        padding: 0;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
     .portfolio-title {
         padding: 0;
+        text-align: center;
     }
 
     .portfolio-title h1 {
         font-size: 70px;
+        margin-bottom: 0;
+    }
+
+    .toggle-others-cases {
+        font-size: 12px;
+        padding: 10px 18px;
+    }
+
+    .others-case-actions {
+        padding-bottom: 24px;
     }
 
     .others-project {
@@ -362,12 +380,17 @@
     }
 
     .clients-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 10px;
     }
 
     .card-client {
-        width: 96px;
-        height: 96px;
+        width: 100%;
+        aspect-ratio: 1 / 1;
+    }
+
+    .card-client img {
+        max-width: 100%;
     }
 
     /* Portfolio */
@@ -375,9 +398,29 @@
         padding: 28px 14px;
     }
 
+    .portfolio-header {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+    }
+
     .portfolio-title h1 {
         font-size: clamp(24px, 9vw, 40px);
-        margin-bottom: 20px;
+        margin-bottom: 0;
+    }
+
+    .toggle-others-cases {
+        width: 100%;
+        max-width: 220px;
+        font-size: 11px;
+        padding: 10px 16px;
+    }
+
+    .others-case-actions {
+        padding: 0 14px 24px;
     }
 
     .global-soccer {
